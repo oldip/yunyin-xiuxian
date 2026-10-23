@@ -1,0 +1,1 @@
+(function(){System.register([`./player-legacy-DhNgvczy.js`,`./index-legacy-DIYNisfw.js`],function(e,t){var n,r,i;function a(){var e=arguments.length>0&&arguments[0]!==void 0?arguments[0]:1e3,t=r(n());return i(function(){t.value=n()},e),t}return e(`t`,a),{setters:[function(e){n=e.Kn,r=e.Ts},function(e){i=e.n}],execute:function(){}}})})();

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <script type="module" crossorigin src="./assets/polyfills-Bu-WfQX8.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="description" content="一款文字版修仙放置游戏。一念修行 · 云深不知处。" />
+    <!-- theme-color 由 src/core/theme.ts 在启动与主题切换时动态同步(亮/暗各一色) -->
+    <meta name="theme-color" content="#F3EFE4" />
+    <meta name="keywords" content="云隐修仙录,云隐,云隐修仙,修仙,修仙游戏,文字游戏,文字修仙,放置修仙,放置游戏" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="云隐修仙录" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="云隐修仙录 — 一念修行 · 云深不知处" />
+    <meta property="og:description" content="文字版修仙放置游戏" />
+    <link rel="icon" href="./favicon.ico" />
+    <!-- PWA「添加到主屏幕」:manifest 提供独立图标/全屏/启动画面(ISS-171) -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <title>云隐修仙录</title>
+    <script type="module" crossorigin src="./assets/index-pM40ML7X.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-Dd_uD5pT.js">
+    <link rel="modulepreload" crossorigin href="./assets/player-DNb3Mf0T.js">
+    <link rel="modulepreload" crossorigin href="./assets/ui-X1IRNSLD.js">
+    <link rel="modulepreload" crossorigin href="./assets/settings-DtwDSZPG.js">
+    <link rel="modulepreload" crossorigin href="./assets/beastFamilies-CZQqzRO-.js">
+    <link rel="modulepreload" crossorigin href="./assets/gauntlet-CEfL6OkU.js">
+    <link rel="modulepreload" crossorigin href="./assets/comboArts-CBc2-OA6.js">
+    <link rel="modulepreload" crossorigin href="./assets/buildDetect-sXEyuhKa.js">
+    <link rel="modulepreload" crossorigin href="./assets/equipSet-BodnRvrV.js">
+    <link rel="modulepreload" crossorigin href="./assets/salvage-Bu7CCKVO.js">
+    <link rel="modulepreload" crossorigin href="./assets/loreService-G_iU6oW0.js">
+    <link rel="modulepreload" crossorigin href="./assets/quests-rRel9afi.js">
+    <link rel="modulepreload" crossorigin href="./assets/progress-DPOESuJ3.js">
+    <link rel="modulepreload" crossorigin href="./assets/samsaraService-BVa3TvJY.js">
+    <link rel="modulepreload" crossorigin href="./assets/audio-CwrxQLiF.js">
+    <link rel="modulepreload" crossorigin href="./assets/pillService-CV_k7p6x.js">
+    <link rel="modulepreload" crossorigin href="./assets/petPersonality-CswkJUGK.js">
+    <link rel="modulepreload" crossorigin href="./assets/loot-B-b0Bjvh.js">
+    <link rel="modulepreload" crossorigin href="./assets/linggenAffinity-CdFEZmhe.js">
+    <link rel="modulepreload" crossorigin href="./assets/gongfaService-sCaArcgJ.js">
+    <link rel="modulepreload" crossorigin href="./assets/tribulationDecision-CY1AHGZV.js">
+    <link rel="modulepreload" crossorigin href="./assets/buildSearch-K_mA2pY0.js">
+    <link rel="modulepreload" crossorigin href="./assets/worldGen-D_G0miJu.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-D3en3iLV.css">
+    <script type="module">import'data:text/javascript,if(!import.meta.resolve)throw Error("import.meta.resolve not supported")';import.meta.url;import("_").catch(()=>1);(async function*(){})().next();window.__vite_is_modern_browser=true</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <!--
+      统计代码勿删 —— 但**不许挡住游戏**。
+
+      它原本是一条普通 <script>:解析器要停下等它下载并执行完,才轮到后面的模块脚本,
+      也就是「统计脚本多久回来,首屏就晚多久」(实测脚本卡 1200ms,界面 1294ms 才出现;
+      弱网或劫持下没有上限)。改成 defer 后它退到文档解析之后、与游戏模块脚本并行下载,
+      恰好在 DOMContentLoaded 之前执行完。
+
+      下面这句因此不能再裸写 LA.init:离线(Service Worker 只兜自家资源,跨域一律不干预)
+      或被广告拦截时,脚本压根不存在,裸写会抛未捕获的 ReferenceError —— 每次离线冷启动
+      都抛一次。defer 脚本必定先于 DOMContentLoaded 跑完,所以在这里等 DOMContentLoaded
+      再初始化;取不到就静默,统计丢了不要紧,游戏照常。
+    -->
+    <script defer charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        window.LA?.init({ id: 'LIx18788ryPZohY4', ck: 'LIx18788ryPZohY4', autoTrack: true, hashMode: true })
+      })
+    </script>
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy-B4qWoe9Y.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy-DIYNisfw.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+
+</html>
