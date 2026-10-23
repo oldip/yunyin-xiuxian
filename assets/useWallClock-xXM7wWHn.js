@@ -1,0 +1,1 @@
+import{Ts as e,cs as t,ss as n}from"./player-C1_WrKSA.js";function r(e,t=1e3){let n=window.setInterval(e,t);return()=>window.clearInterval(n)}function i(i=1e3){let a=e(Date.now()),o;return n(()=>{o=r(()=>{a.value=Date.now()},i)}),t(()=>o?.()),a}export{i as t};
